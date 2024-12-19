@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -7,7 +8,7 @@ const Login = () => {
         {/* Icon or Graphic */}
         <div className="flex justify-center">
           <img
-            src="https://via.placeholder.com/80"
+            src="https://www.stylopay.com/img/main/logo-whiteVersion.svg"
             alt="Logo"
             className="w-20 h-20 rounded-full shadow-md mb-4 animate-bounce"
           />
@@ -62,15 +63,15 @@ const Login = () => {
         <div className="mt-4 text-center">
           <p className="text-sm text-gray-600">
             Don't have an account?{' '}
-            <a href="#" className="text-indigo-500 hover:underline">
+            <Link to="/" className="text-indigo-500 hover:underline">
               Sign up
-            </a>
+            </Link>
           </p>
           <p className="text-sm text-gray-600 mt-2">
             Forgot your password?{' '}
-            <a href="#" className="text-indigo-500 hover:underline">
+            <Link to="#" className="text-indigo-500 hover:underline">
               Reset it
-            </a>
+            </Link>
           </p>
         </div>
       </div>
